@@ -29,7 +29,7 @@ try:
             playsound('You_Suffer.mp3')
             if 'open_24' in converted:
                 opening_price = float(converted['open_24h'])
-                ten_percent = opening_price * 0.01
+                ten_percent = opening_price * 0.10
                 if btc_price <= (opening_price - ten_percent):
                     print("BTC price has dropped by at least 10%")
                     print("Opening price: ", opening_price)
